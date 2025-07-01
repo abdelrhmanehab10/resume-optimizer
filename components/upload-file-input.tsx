@@ -26,6 +26,8 @@ export default function UploadFileInput() {
     },
   ] = useFileUpload({
     maxSize,
+    accept:
+      ".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document",
   });
 
   const file = files[0];
@@ -46,6 +48,7 @@ export default function UploadFileInput() {
           {...getInputProps()}
           className="sr-only"
           aria-label="Upload file"
+          accept=".pdf, .docx"
           disabled={Boolean(file)}
         />
 
@@ -58,7 +61,8 @@ export default function UploadFileInput() {
           </div>
           <p className="mb-1.5 text-sm font-medium">Upload Your Resume</p>
           <p className="text-muted-foreground text-xs">
-            Drag & drop or click to browse (max. {formatBytes(maxSize)})
+            Drag & drop PDF or DOCX files or click to browse (max.{" "}
+            {formatBytes(maxSize)})
           </p>
         </div>
       </div>
@@ -104,7 +108,9 @@ export default function UploadFileInput() {
         </div>
       )}
 
-      <Button className="w-full mt-2">Analyze ✨</Button>
+      <Button className="mt-2 w-full" disabled={!file}>
+        Analyze ✨
+      </Button>
 
       <p
         aria-live="polite"
