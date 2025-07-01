@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import UploadFileInput from "@/components/upload-file-input";
 
 export default function Home() {

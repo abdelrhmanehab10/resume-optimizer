@@ -117,8 +117,8 @@ export default function UploadFileInput() {
         role="region"
         className="text-muted-foreground mt-1 text-center text-xs"
       >
-        Upload your resume, then click 'Analyze' or press Enter to begin the
-        analysis.
+        Upload your resume, then click &apos;Analyze&apos; or press Enter to
+        begin the analysis.
       </p>
     </div>
   );
