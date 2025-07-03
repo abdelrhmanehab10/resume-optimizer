@@ -2,6 +2,8 @@
 
 > A modern SaaS tool that uses AI to analyze, enhance, and rewrite resumes to maximize job-hunting success. Built with Next.js, Node.js, and AI integrations.
 
+![image](https://github.com/user-attachments/assets/bfe7de68-6902-4d61-ad64-c3dd08f44db8)
+
 ---
 
 ## 🧠 What is AI Resume Optimizer?
