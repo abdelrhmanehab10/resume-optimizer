@@ -1,37 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✨ AI Resume Optimizer
 
-## Getting Started
+> A modern SaaS tool that uses AI to analyze, enhance, and rewrite resumes to maximize job-hunting success. Built with Next.js, Node.js, and AI integrations.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🧠 What is AI Resume Optimizer?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+AI Resume Optimizer is a smart web platform that helps job seekers:
+- 📄 Analyze their uploaded CV/resume (PDF or DOCX)
+- 💡 Receive personalized suggestions to improve content, structure, and formatting
+- ✅ Ensure ATS (Applicant Tracking System) compatibility
+- 🎯 Export a clean, optimized version of their resume
+- 🔐 Keep data private — processed securely with AI and deleted after analysis
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Features
 
-## Learn More
+- 🔐 Secure resume upload (PDF/DOCX)
+- 🤖 AI-powered analysis using GPT models
+- ✅ ATS-compatibility checks
+- 🧩 Tips for layout, wording, and impact
+- 📥 One-click download of optimized PDF
+- 🌐 Built with modern stack (Next.js + Node.js + Tailwind CSS + UploadThing)
+- 🔌 Optional: Stripe payment for advanced features
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📸 Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Upload Resume | Analysis Result | Download Optimized CV |
+|---------------|------------------|------------------------|
+| ![upload](./public/screens/upload.png) | ![analyze](./public/screens/analyze.png) | ![result](./public/screens/result.png) |
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# resume-optimizer
+- **Frontend**: Next.js (App Router), TypeScript, Tailwind CSS, Shadcn/UI
+- **Backend**: Node.js, Express, UploadThing
+- **AI**: OpenAI API (GPT-4), resume parser
+- **Storage**: Supabase / Local FileSystem
+- **PDF Export**: `pdf-lib`, `react-pdf`, or `jsPDF`
+- **Payment (optional)**: Stripe
+
+---
+
+## 🧪 How It Works
+
+1. **Upload**: User uploads a resume (PDF or DOCX)
+2. **Parse**: Backend extracts structured data from the document
+3. **Analyze**: AI evaluates the content and identifies weak points
+4. **Suggest**: The system returns clear suggestions and an ATS score
+5. **Export**: User can download an updated, optimized resume
