@@ -1,6 +1,12 @@
 "use client";
 
-import { Loader2, PaperclipIcon, UploadIcon, XIcon } from "lucide-react";
+import {
+  ChevronRightIcon,
+  Loader2,
+  PaperclipIcon,
+  UploadIcon,
+  XIcon,
+} from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { useDropzone } from "@uploadthing/react";
@@ -15,6 +21,7 @@ import { unstable_ViewTransition as ViewTransition } from "react";
 import { useRouter } from "next/navigation";
 import { ClientUploadedFileData } from "uploadthing/types";
 import { useHotkeys } from "react-hotkeys-hook";
+import Link from "next/link";
 
 export default function UploadFileInput() {
   const router = useRouter();
@@ -123,8 +130,10 @@ export default function UploadFileInput() {
         role="region"
         className="text-muted-foreground text-center text-xs"
       >
-        Upload your resume, then click &apos;Analyze&apos; or press Enter to
-        begin the analysis.
+        Don't have a CV? You can easily create one from scratch {""}
+        <Link href={"create-resume"} className="hover:underline">
+          Create Resume
+        </Link>
       </p>
     </div>
   );
