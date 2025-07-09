@@ -131,7 +131,7 @@ export default function UploadFileInput() {
         className="text-muted-foreground text-center text-xs"
       >
         Don't have a CV? You can easily create one from scratch {""}
-        <Link href={"create-resume"} className="hover:underline">
+        <Link href={"resume-builder"} className="hover:underline">
           Create Resume
         </Link>
       </p>
